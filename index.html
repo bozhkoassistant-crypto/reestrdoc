@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Реестр договоров</title>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="loginOverlay"><div class="loginBox"><h2>🔐 Реестр договоров</h2><p>Введите логин и пароль</p><input id="liLogin" placeholder="Логин"><input id="liPass" type="password" placeholder="Пароль"><button onclick="doLogin()">Войти</button><div class="err" id="liErr"></div></div></div>
+<header><h1>Реестр договоров</h1><div id="userMenu" style="display:none"></div><span class="sub" id="metainfo"></span><span id="cloud" onclick="switchTab('settings')">…</span></header>
+<nav id="tabs"></nav>
+<main id="view"></main>
+<div class="overlay" id="overlay" onclick="closeModal()"></div>
+<div class="modal" id="modal"></div>
+<div id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
